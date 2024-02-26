@@ -1,0 +1,82 @@
+<mxfile host="app.diagrams.net" modified="2024-02-26T20:29:11.389Z" agent="Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/121.0.0.0 Safari/537.36" etag="u2XJ4JjIJfa7NJdKMMud" version="23.1.5" type="device">
+  <diagram name="Page-1" id="c4acf3e9-155e-7222-9cf6-157b1a14988f">
+    <mxGraphModel dx="2924" dy="1098" grid="1" gridSize="10" guides="1" tooltips="1" connect="1" arrows="1" fold="1" page="1" pageScale="1" pageWidth="850" pageHeight="1100" background="none" math="0" shadow="0">
+      <root>
+        <mxCell id="0" />
+        <mxCell id="1" parent="0" />
+        <mxCell id="aPGqOwhahftCBwhNRiks-26" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;endArrow=diamondThin;endFill=1;endSize=19;" edge="1" parent="1" source="5d2195bd80daf111-18" target="aPGqOwhahftCBwhNRiks-5">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="5d2195bd80daf111-18" value="&lt;p style=&quot;margin:0px;margin-top:4px;text-align:center;&quot;&gt;&lt;i&gt;class&lt;/i&gt;&lt;br&gt;&lt;b&gt;Database&lt;/b&gt;&lt;/p&gt;&lt;hr size=&quot;1&quot;&gt;&lt;p style=&quot;margin:0px;margin-left:4px;&quot;&gt;&lt;/p&gt;&lt;p style=&quot;margin:0px;margin-left:4px;&quot;&gt;+ db *sql.DB&lt;br&gt;&lt;/p&gt;&lt;hr&gt;&lt;p style=&quot;margin:0px;margin-left:4px;&quot;&gt;+ NewDatabase(): *&lt;b style=&quot;border-color: var(--border-color); text-align: center;&quot;&gt;Database&lt;/b&gt;&lt;br&gt;+ Close(): void&lt;/p&gt;&lt;p style=&quot;margin:0px;margin-left:4px;&quot;&gt;+ GetDB(): *sql.DB&lt;/p&gt;" style="verticalAlign=top;align=left;overflow=fill;fontSize=12;fontFamily=Helvetica;html=1;rounded=0;shadow=0;comic=0;labelBackgroundColor=none;strokeWidth=1" parent="1" vertex="1">
+          <mxGeometry x="-80" y="20" width="190" height="140" as="geometry" />
+        </mxCell>
+        <mxCell id="aPGqOwhahftCBwhNRiks-1" value="&lt;p style=&quot;margin:0px;margin-top:4px;text-align:center;&quot;&gt;&lt;i&gt;interface&lt;/i&gt;&lt;br&gt;&lt;b&gt;Repository&lt;/b&gt;&lt;/p&gt;&lt;hr size=&quot;1&quot;&gt;&lt;p style=&quot;margin:0px;margin-left:4px;&quot;&gt;&lt;/p&gt;&lt;p style=&quot;margin:0px;margin-left:4px;&quot;&gt;&lt;span style=&quot;background-color: initial;&quot;&gt;+ CreateUser(Context, *User): *User&lt;/span&gt;&lt;br&gt;&lt;/p&gt;&lt;p style=&quot;margin:0px;margin-left:4px;&quot;&gt;+ CheckUserExist(Context, email string): bool&amp;nbsp;&lt;/p&gt;&lt;p style=&quot;margin:0px;margin-left:4px;&quot;&gt;+ GetUserByEmail(Context, email string): *User&lt;/p&gt;" style="verticalAlign=top;align=left;overflow=fill;fontSize=12;fontFamily=Helvetica;html=1;rounded=0;shadow=0;comic=0;labelBackgroundColor=none;strokeWidth=1" vertex="1" parent="1">
+          <mxGeometry x="235" y="395" width="280" height="100" as="geometry" />
+        </mxCell>
+        <mxCell id="aPGqOwhahftCBwhNRiks-2" value="&lt;p style=&quot;margin:0px;margin-top:4px;text-align:center;&quot;&gt;&lt;i&gt;interface&lt;/i&gt;&lt;br&gt;&lt;b&gt;Service&lt;/b&gt;&lt;/p&gt;&lt;hr size=&quot;1&quot;&gt;&lt;p style=&quot;margin:0px;margin-left:4px;&quot;&gt;&lt;/p&gt;&lt;p style=&quot;margin:0px;margin-left:4px;&quot;&gt;&lt;span style=&quot;background-color: initial;&quot;&gt;+ CreateUser(Context, *CreateUserReq): *CreateUserRes&lt;/span&gt;&lt;br&gt;&lt;/p&gt;&lt;p style=&quot;margin:0px;margin-left:4px;&quot;&gt;+ Login(Context, *LoginUserReq): *LoginUserRes&amp;nbsp;&lt;br&gt;&lt;/p&gt;&lt;p style=&quot;margin:0px;margin-left:4px;&quot;&gt;&lt;br&gt;&lt;/p&gt;" style="verticalAlign=top;align=left;overflow=fill;fontSize=12;fontFamily=Helvetica;html=1;rounded=0;shadow=0;comic=0;labelBackgroundColor=none;strokeWidth=1" vertex="1" parent="1">
+          <mxGeometry x="570" y="400" width="330" height="110" as="geometry" />
+        </mxCell>
+        <mxCell id="aPGqOwhahftCBwhNRiks-25" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;endArrow=diamondThin;endFill=1;endSize=19;" edge="1" parent="1" source="aPGqOwhahftCBwhNRiks-3" target="aPGqOwhahftCBwhNRiks-2">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="aPGqOwhahftCBwhNRiks-3" value="&lt;p style=&quot;margin:0px;margin-top:4px;text-align:center;&quot;&gt;&lt;i&gt;class&lt;/i&gt;&lt;br&gt;&lt;b&gt;UserHandler&lt;/b&gt;&lt;/p&gt;&lt;hr&gt;&amp;nbsp;+ Service&lt;hr size=&quot;1&quot;&gt;&lt;p style=&quot;margin:0px;margin-left:4px;&quot;&gt;&lt;/p&gt;&lt;p style=&quot;margin:0px;margin-left:4px;&quot;&gt;&lt;/p&gt;&lt;p style=&quot;margin:0px;margin-left:4px;&quot;&gt;+ NewHandler(Service): *UserHandler&lt;br&gt;+ CreateUser(*gin.Context): void&lt;/p&gt;&lt;p style=&quot;margin:0px;margin-left:4px;&quot;&gt;+ Login(*gin.Context): void&lt;/p&gt;&lt;p style=&quot;margin:0px;margin-left:4px;&quot;&gt;+ Logout(*gin.Context): void&lt;/p&gt;" style="verticalAlign=top;align=left;overflow=fill;fontSize=12;fontFamily=Helvetica;html=1;rounded=0;shadow=0;comic=0;labelBackgroundColor=none;strokeWidth=1" vertex="1" parent="1">
+          <mxGeometry x="625" y="150" width="220" height="140" as="geometry" />
+        </mxCell>
+        <mxCell id="aPGqOwhahftCBwhNRiks-6" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;endArrow=block;endFill=0;endSize=19;" edge="1" parent="1" source="aPGqOwhahftCBwhNRiks-4" target="aPGqOwhahftCBwhNRiks-1">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="aPGqOwhahftCBwhNRiks-24" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;endArrow=diamondThin;endFill=1;endSize=19;" edge="1" parent="1" source="aPGqOwhahftCBwhNRiks-4" target="aPGqOwhahftCBwhNRiks-5">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="aPGqOwhahftCBwhNRiks-4" value="&lt;p style=&quot;margin:0px;margin-top:4px;text-align:center;&quot;&gt;&lt;i&gt;class&lt;/i&gt;&lt;br&gt;&lt;b&gt;repository&lt;/b&gt;&lt;/p&gt;&lt;hr&gt;&amp;nbsp;+ DBTX&lt;hr size=&quot;1&quot;&gt;&lt;p style=&quot;margin:0px;margin-left:4px;&quot;&gt;&lt;/p&gt;&lt;p style=&quot;margin:0px;margin-left:4px;&quot;&gt;&lt;/p&gt;&lt;p style=&quot;margin:0px;margin-left:4px;&quot;&gt;+ NewRepository(DBTX): Repository&lt;br&gt;+ CreateUser(Context, *User): *User&lt;/p&gt;&lt;p style=&quot;margin:0px;margin-left:4px;&quot;&gt;+ CheckUserExist(Context, email string): bool&lt;/p&gt;&lt;p style=&quot;margin:0px;margin-left:4px;&quot;&gt;+&amp;nbsp;GetUserByEmail&lt;span style=&quot;background-color: initial;&quot;&gt;(Context, email string): *User&lt;/span&gt;&lt;/p&gt;" style="verticalAlign=top;align=left;overflow=fill;fontSize=12;fontFamily=Helvetica;html=1;rounded=0;shadow=0;comic=0;labelBackgroundColor=none;strokeWidth=1" vertex="1" parent="1">
+          <mxGeometry x="240" y="180" width="270" height="140" as="geometry" />
+        </mxCell>
+        <mxCell id="aPGqOwhahftCBwhNRiks-5" value="&lt;p style=&quot;margin:0px;margin-top:4px;text-align:center;&quot;&gt;&lt;i&gt;interface&lt;/i&gt;&lt;br&gt;&lt;b&gt;DBTX&lt;/b&gt;&lt;/p&gt;&lt;hr size=&quot;1&quot;&gt;&lt;p style=&quot;margin:0px;margin-left:4px;&quot;&gt;&lt;/p&gt;&lt;p style=&quot;margin:0px;margin-left:4px;&quot;&gt;&lt;span style=&quot;background-color: initial;&quot;&gt;+ QueryContext(Context, string, ...any): *sql.Rows&lt;/span&gt;&lt;br&gt;&lt;/p&gt;&lt;p style=&quot;margin:0px;margin-left:4px;&quot;&gt;+ QueryRowContext(Context, string, ...any): *sql.Row&amp;nbsp;&lt;br&gt;&lt;/p&gt;&lt;p style=&quot;margin:0px;margin-left:4px;&quot;&gt;&lt;br&gt;&lt;/p&gt;" style="verticalAlign=top;align=left;overflow=fill;fontSize=12;fontFamily=Helvetica;html=1;rounded=0;shadow=0;comic=0;labelBackgroundColor=none;strokeWidth=1" vertex="1" parent="1">
+          <mxGeometry x="-150" y="210" width="330" height="80" as="geometry" />
+        </mxCell>
+        <mxCell id="aPGqOwhahftCBwhNRiks-8" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;endArrow=block;endFill=0;endSize=19;" edge="1" parent="1" source="aPGqOwhahftCBwhNRiks-7" target="aPGqOwhahftCBwhNRiks-2">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="aPGqOwhahftCBwhNRiks-23" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;endArrow=diamondThin;endFill=1;endSize=19;" edge="1" parent="1" source="aPGqOwhahftCBwhNRiks-7" target="aPGqOwhahftCBwhNRiks-1">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="aPGqOwhahftCBwhNRiks-7" value="&lt;p style=&quot;margin:0px;margin-top:4px;text-align:center;&quot;&gt;&lt;i&gt;class&lt;/i&gt;&lt;br&gt;&lt;b&gt;service&lt;/b&gt;&lt;/p&gt;&lt;hr&gt;&amp;nbsp;+ Repository&lt;br&gt;&amp;nbsp;+ timeout Duration&lt;br&gt;&lt;hr size=&quot;1&quot;&gt;&lt;p style=&quot;margin:0px;margin-left:4px;&quot;&gt;&lt;/p&gt;&lt;p style=&quot;margin:0px;margin-left:4px;&quot;&gt;&lt;/p&gt;&lt;p style=&quot;margin:0px;margin-left:4px;&quot;&gt;+ NewService(Repository): Service&lt;br&gt;+ CreateUser(Context, *CreateUserReq): *CreateUserRes&lt;/p&gt;&lt;p style=&quot;margin:0px;margin-left:4px;&quot;&gt;+ Login(Context, *LoginUserReq): *LoginUserRes&lt;/p&gt;" style="verticalAlign=top;align=left;overflow=fill;fontSize=12;fontFamily=Helvetica;html=1;rounded=0;shadow=0;comic=0;labelBackgroundColor=none;strokeWidth=1" vertex="1" parent="1">
+          <mxGeometry x="210" y="570" width="330" height="140" as="geometry" />
+        </mxCell>
+        <mxCell id="aPGqOwhahftCBwhNRiks-14" value="&lt;p style=&quot;margin:0px;margin-top:4px;text-align:center;&quot;&gt;&lt;i&gt;class&lt;/i&gt;&lt;br&gt;&lt;b&gt;Client&lt;/b&gt;&lt;/p&gt;&lt;hr&gt;&amp;nbsp;+ Conn *websocket.Conn&lt;br&gt;&amp;nbsp;+ Message chan *Message&lt;br&gt;&amp;nbsp;+ ID string&lt;br&gt;&amp;nbsp;+ ChatID string&lt;br&gt;&amp;nbsp;+ Username string&lt;br&gt;&amp;nbsp;+ Roles string[]&lt;br&gt;&lt;hr&gt;&amp;nbsp;+ writeMessage(): void&lt;br&gt;&amp;nbsp;+ readMessage(*Channel): void" style="verticalAlign=top;align=left;overflow=fill;fontSize=12;fontFamily=Helvetica;html=1;rounded=0;shadow=0;comic=0;labelBackgroundColor=none;strokeWidth=1" vertex="1" parent="1">
+          <mxGeometry x="-415" y="590" width="190" height="190" as="geometry" />
+        </mxCell>
+        <mxCell id="aPGqOwhahftCBwhNRiks-28" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;endArrow=diamondThin;endFill=1;endSize=19;" edge="1" parent="1" source="aPGqOwhahftCBwhNRiks-17" target="aPGqOwhahftCBwhNRiks-5">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="aPGqOwhahftCBwhNRiks-17" value="&lt;p style=&quot;margin:0px;margin-top:4px;text-align:center;&quot;&gt;&lt;i&gt;class&lt;/i&gt;&lt;br&gt;&lt;b&gt;Chat&lt;/b&gt;&lt;/p&gt;&lt;hr&gt;&amp;nbsp;+ DBTX&lt;br&gt;&amp;nbsp;+ ID string&lt;br&gt;&amp;nbsp;+ Name string&lt;br&gt;&amp;nbsp;+ Clients map[string]*Clients&amp;nbsp;&lt;br&gt;&amp;nbsp;+ MessageHistory *Message[]&lt;br&gt;&lt;hr&gt;&amp;nbsp;+ RestoreMessages(): void" style="verticalAlign=top;align=left;overflow=fill;fontSize=12;fontFamily=Helvetica;html=1;rounded=0;shadow=0;comic=0;labelBackgroundColor=none;strokeWidth=1" vertex="1" parent="1">
+          <mxGeometry x="-80" y="365" width="190" height="160" as="geometry" />
+        </mxCell>
+        <mxCell id="aPGqOwhahftCBwhNRiks-29" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;endArrow=diamondThin;endFill=1;endSize=19;startArrow=oval;startFill=1;startSize=19;" edge="1" parent="1" source="aPGqOwhahftCBwhNRiks-18" target="aPGqOwhahftCBwhNRiks-17">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="aPGqOwhahftCBwhNRiks-18" value="&lt;p style=&quot;margin:0px;margin-top:4px;text-align:center;&quot;&gt;&lt;i&gt;class&lt;/i&gt;&lt;br&gt;&lt;b&gt;Channel&lt;/b&gt;&lt;/p&gt;&lt;hr&gt;&amp;nbsp;+ Chats map[string]*Chat&lt;br&gt;&amp;nbsp;+ Register chan *Client&lt;br&gt;&amp;nbsp;+ UnRegister chan *Client&lt;br&gt;&amp;nbsp;+ Broadcast chan *Message&lt;br&gt;&amp;nbsp;+ Members Client[]&lt;br&gt;&lt;hr&gt;&amp;nbsp;+ NewChannel(): *Channel&lt;br&gt;&amp;nbsp;+ Run(): void&lt;br&gt;&amp;nbsp;+ AddRole():" style="verticalAlign=top;align=left;overflow=fill;fontSize=12;fontFamily=Helvetica;html=1;rounded=0;shadow=0;comic=0;labelBackgroundColor=none;strokeWidth=1" vertex="1" parent="1">
+          <mxGeometry x="-420" y="360" width="200" height="170" as="geometry" />
+        </mxCell>
+        <mxCell id="aPGqOwhahftCBwhNRiks-32" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;endArrow=diamondThin;endFill=1;endSize=19;" edge="1" parent="1" source="aPGqOwhahftCBwhNRiks-19" target="aPGqOwhahftCBwhNRiks-18">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="aPGqOwhahftCBwhNRiks-19" value="&lt;p style=&quot;margin:0px;margin-top:4px;text-align:center;&quot;&gt;&lt;i&gt;class&lt;/i&gt;&lt;br&gt;&lt;b&gt;WSHandler&lt;/b&gt;&lt;/p&gt;&lt;hr&gt;&amp;nbsp;+ *Channel&lt;hr size=&quot;1&quot;&gt;&lt;p style=&quot;margin:0px;margin-left:4px;&quot;&gt;&lt;/p&gt;&lt;p style=&quot;margin:0px;margin-left:4px;&quot;&gt;&lt;/p&gt;&lt;p style=&quot;margin:0px;margin-left:4px;&quot;&gt;+ NewHandler(*Channel): *WSHandler&lt;br&gt;+ CreateChat(*gin.Context): void&lt;/p&gt;&lt;p style=&quot;margin:0px;margin-left:4px;&quot;&gt;+ JoinChat(*gin.Context): void&lt;/p&gt;&lt;p style=&quot;margin:0px;margin-left:4px;&quot;&gt;+ GetChats(*gin.Context): void&lt;/p&gt;&lt;p style=&quot;margin:0px;margin-left:4px;&quot;&gt;+ GetClients(*gin.Context):&lt;/p&gt;" style="verticalAlign=top;align=left;overflow=fill;fontSize=12;fontFamily=Helvetica;html=1;rounded=0;shadow=0;comic=0;labelBackgroundColor=none;strokeWidth=1" vertex="1" parent="1">
+          <mxGeometry x="-670" y="355" width="190" height="180" as="geometry" />
+        </mxCell>
+        <mxCell id="aPGqOwhahftCBwhNRiks-31" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;endArrow=diamondThin;endFill=1;endSize=19;startArrow=oval;startFill=1;startSize=19;" edge="1" parent="1" source="aPGqOwhahftCBwhNRiks-18" target="aPGqOwhahftCBwhNRiks-14">
+          <mxGeometry relative="1" as="geometry">
+            <mxPoint x="-220" y="465" as="sourcePoint" />
+            <mxPoint x="-40" y="615" as="targetPoint" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="aPGqOwhahftCBwhNRiks-34" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;endArrow=diamondThin;endFill=1;endSize=19;" edge="1" parent="1" source="aPGqOwhahftCBwhNRiks-33" target="aPGqOwhahftCBwhNRiks-5">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="aPGqOwhahftCBwhNRiks-33" value="&lt;p style=&quot;margin:0px;margin-top:4px;text-align:center;&quot;&gt;&lt;i&gt;class&lt;/i&gt;&lt;br&gt;&lt;b&gt;ChannelManager&lt;/b&gt;&lt;/p&gt;&lt;hr&gt;&amp;nbsp;+ DBTX&lt;br&gt;&lt;hr&gt;&amp;nbsp;+ CreateChannel(Name): ChannelRes&lt;br&gt;&amp;nbsp;+ GetChannel(Name): ChannelRes" style="verticalAlign=top;align=left;overflow=fill;fontSize=12;fontFamily=Helvetica;html=1;rounded=0;shadow=0;comic=0;labelBackgroundColor=none;strokeWidth=1" vertex="1" parent="1">
+          <mxGeometry x="-435" y="190" width="230" height="120" as="geometry" />
+        </mxCell>
+      </root>
+    </mxGraphModel>
+  </diagram>
+</mxfile>
