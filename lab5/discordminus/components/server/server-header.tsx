@@ -17,8 +17,10 @@ import {
   Trash,
   UserPlus,
   Users,
+  FileText,
 } from "lucide-react";
 import { useModal } from "@/hooks/use-modal-store";
+import axios from "axios";
 
 interface ServerHeaderProps {
   server: ServerWithMembersWithProfiles;
@@ -27,6 +29,26 @@ interface ServerHeaderProps {
 
 export const ServerHeader = ({ server, role }: ServerHeaderProps) => {
   const { onOpen } = useModal();
+
+  const getReport = () => {
+    try {
+      const query = `http://localhost:8000/ServerReport/${server.id}`;
+      axios({
+        url: query,
+        method: 'GET',
+        responseType: 'blob', // important
+      }).then((response) => {
+        const url = window.URL.createObjectURL(new Blob([response.data]));
+        const link = document.createElement('a');
+        link.href = url;
+        link.setAttribute('download', 'ServerReport.csv');
+        document.body.appendChild(link);
+        link.click();
+      });
+    } catch (error) {
+      console.log(error);
+    }
+  };
 
   const isAdmin = role === MemberRole.ADMIN;
   const isModerator = isAdmin || role === MemberRole.MODERATOR;
@@ -82,6 +104,15 @@ export const ServerHeader = ({ server, role }: ServerHeaderProps) => {
           >
             Создать канал
             <PlusCircle className="h-4 w-4 ml-auto" />
+          </DropdownMenuItem>
+        )}
+        {isAdmin && (
+          <DropdownMenuItem
+            onClick={() => getReport()}
+            className="px-3 py-2 text-sm cursor-pointer"
+          >
+            Получить отчет
+            <FileText className="h-4 w-4 ml-auto" />
           </DropdownMenuItem>
         )}
         {isModerator && <DropdownMenuSeparator />}
